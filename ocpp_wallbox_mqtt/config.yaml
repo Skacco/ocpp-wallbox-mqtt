@@ -1,7 +1,7 @@
 name: "OCPP Wallbox MQTT Server"
 slug: "ocpp_wallbox_mqtt"
 description: "OCPP Wallbox MQTT Server"
-version: "1.8.22"
+version: "1.8.23"
 url: "https://github.com/skaccox/ocpp-wallbox-mqtt"
 documentation: "https://gitlab.com/lucabon/ocpp-mqtt-perl-server"
 
@@ -56,7 +56,7 @@ options:
 
   global_energy: false
   use_stop_as_suspend: false
-  stop_on_suspendev: 0
+  stop_on_suspendev: "0"
 
   meter_mqtt_prefix: "home/grid"
   meter_mqtt_power: "power"

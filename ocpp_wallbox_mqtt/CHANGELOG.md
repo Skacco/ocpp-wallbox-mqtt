@@ -1,4 +1,11 @@
 # Changelog
+## [1.8.23] - 2026-11-24
+- FIX il default di stop_on_suspendev era scritto come numero (0) mentre il
+  suo schema dice str: su un'installazione nuova il Supervisor valida i
+  default e rifiutava la configurazione. Su chi l'add-on ce l'ha gia', il
+  valore e' salvato e i default non vengono piu' riletti, per questo non si
+  era mai visto. Nel file ini non cambia niente: era e resta
+  STOP_ON_SUSPENDEV=0
 ## [1.8.22] - 2026-11-08
 - FIX in GRAPH il titolo "OCPP Wallbox" stava due px piu' in alto che in LIVE:
   i due px dell'intestazione erano stati tolti dal margine di sopra, che alza
